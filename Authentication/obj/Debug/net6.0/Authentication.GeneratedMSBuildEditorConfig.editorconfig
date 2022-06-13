@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\School\leerjaar_2\C#\Project\Authentication\Authentication
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/Account/AccesDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxBY2Nlc0RlbmllZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -23,12 +27,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/HRManager.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSFJNYW5hZ2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/HumanResource.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSHVtYW5SZXNvdXJjZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/Settings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2V0dGluZ3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/Shared/_ValidationScriptsPartial.cshtml]

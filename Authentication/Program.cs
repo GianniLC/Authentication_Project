@@ -10,9 +10,30 @@ namespace Authentication
             builder.Services.AddRazorPages();
 
             // add cookies to the browser and give it a name and options
-            builder.Services.AddAuthentication().AddCookie("MyCookieAuth", options =>
+            builder.Services.AddAuthentication("MyCookieAuth").AddCookie("MyCookieAuth", options =>
             {
                 options.Cookie.Name = "MyCookieAuth";
+                options.LoginPath = "/Account/Login";
+                options.AccessDeniedPath = "/Account/AccesDenied";
+
+                // add the scheme so the middleware can locate which authentication service we try to use.
+            });
+
+            // All the policy's
+            builder.Services.AddAuthorization(options =>
+            {
+                // admin policy
+                options.AddPolicy("AdminOnly", policy => policy
+                .RequireClaim("Admin"));
+
+                // HR department policy
+                options.AddPolicy("MustBelongToHRDepartment", policy => policy
+                .RequireClaim("Department", "HR"));
+
+                //HR Department Manager policy
+                options.AddPolicy("HRManagerOnly", policy => policy
+                .RequireClaim("Department", "HR")
+                .RequireClaim("Manager"));
             });
 
             var app = builder.Build();
@@ -30,6 +51,8 @@ namespace Authentication
 
             app.UseRouting();
 
+            // responsible for calling the authentication middleware
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapRazorPages();

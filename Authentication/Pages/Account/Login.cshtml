@@ -1,6 +1,7 @@
 ﻿@page
 @model Authentication.Pages.Account.LoginModel
-@{
+
+@{ ViewData["Title"] = "Login Page";
 	<div class="container border" style="padding:20px">
 		<form method="post">
 		<div class="text-danger" asp-validation-summary="ModelOnly"></div>

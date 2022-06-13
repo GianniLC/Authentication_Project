@@ -11,8 +11,8 @@ namespace Authentication.Pages.Account
         [BindProperty]
         public CredentialModel Credential { get; set; }
 
-        public void OnGet()
-        {
+        public void OnGet() 
+        { 
             // this will happen when the page is being loaded in
             //this.credential = new CredentialModel { Username = "admin" };
         }
@@ -26,9 +26,12 @@ namespace Authentication.Pages.Account
             if (Credential.Username == "admin" && Credential.Password == "password")
             {
                 // Create the security context || READ MORE ABOUT THIS!
-                var claims = new List<Claim> { 
+                var claims = new List<Claim> {
                     new Claim(ClaimTypes.Name, "admin"),
-                    new Claim(ClaimTypes.Email, "admin@mywebsite.com")
+                    new Claim(ClaimTypes.Email, "admin@mywebsite.com"),
+                    new Claim("Department", "HR"),
+                    new Claim("Admin", "true"),
+                    new Claim("Manager", "true"),
                 };
 
                 var identity = new ClaimsIdentity(claims, "MyCookieAuth");
