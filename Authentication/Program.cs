@@ -1,3 +1,6 @@
+using Authentication.Authorization;
+using Microsoft.AspNetCore.Authorization;
+
 namespace Authentication
 {
     public class Program
@@ -15,6 +18,7 @@ namespace Authentication
                 options.Cookie.Name = "MyCookieAuth";
                 options.LoginPath = "/Account/Login";
                 options.AccessDeniedPath = "/Account/AccesDenied";
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(15);
 
                 // add the scheme so the middleware can locate which authentication service we try to use.
             });
@@ -33,8 +37,12 @@ namespace Authentication
                 //HR Department Manager policy
                 options.AddPolicy("HRManagerOnly", policy => policy
                 .RequireClaim("Department", "HR")
-                .RequireClaim("Manager"));
+                .RequireClaim("Manager")
+                .Requirements.Add(new HRManagerProbationRequirement(3)));
             });
+
+            // add the dependency injection for HRManagerRequirment
+            builder.Services.AddSingleton<IAuthorizationHandler, HRManagerProbationRequirementHandler>();
 
             var app = builder.Build();
 
