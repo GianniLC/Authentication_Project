@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\School\\leerjaar_2\\C#\\Geo_Profs_BV\\Authentication\\Authentication.csproj",
+      "projectUniqueName": "E:\\School\\leerjaar_2\\C#\\Project\\Authentication\\Authentication\\Authentication.csproj",
       "projectName": "Authentication",
-      "projectPath": "E:\\School\\leerjaar_2\\C#\\Geo_Profs_BV\\Authentication\\Authentication.csproj",
+      "projectPath": "E:\\School\\leerjaar_2\\C#\\Project\\Authentication\\Authentication\\Authentication.csproj",
       "packagesPath": "C:\\Users\\ciman\\.nuget\\packages\\",
-      "outputPath": "E:\\School\\leerjaar_2\\C#\\Geo_Profs_BV\\Authentication\\obj\\",
+      "outputPath": "E:\\School\\leerjaar_2\\C#\\Project\\Authentication\\Authentication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ciman\\AppData\\Roaming\\NuGet\\NuGet.Config",
