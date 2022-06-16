@@ -8,65 +8,65 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Authentication
 build_property.RootNamespace = Authentication
-build_property.ProjectDir = E:\School\leerjaar_2\C#\Project\Authentication\Authentication\
+build_property.ProjectDir = E:\School\leerjaar_2\C#\Geo_Profs_BV\Authentication\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\School\leerjaar_2\C#\Project\Authentication\Authentication
+build_property.MSBuildProjectDirectory = E:\School\leerjaar_2\C#\Geo_Profs_BV\Authentication
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/Account/AccesDenied.cshtml]
+[E:/School/leerjaar_2/C\#/Geo_Profs_BV/Authentication/Pages/Account/AccesDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxBY2Nlc0RlbmllZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/Account/Login.cshtml]
+[E:/School/leerjaar_2/C\#/Geo_Profs_BV/Authentication/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/Account/Logout.cshtml]
+[E:/School/leerjaar_2/C\#/Geo_Profs_BV/Authentication/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/Error.cshtml]
+[E:/School/leerjaar_2/C\#/Geo_Profs_BV/Authentication/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/HRManager.cshtml]
+[E:/School/leerjaar_2/C\#/Geo_Profs_BV/Authentication/Pages/HRManager.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSFJNYW5hZ2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/HumanResource.cshtml]
+[E:/School/leerjaar_2/C\#/Geo_Profs_BV/Authentication/Pages/HumanResource.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSHVtYW5SZXNvdXJjZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/Index.cshtml]
+[E:/School/leerjaar_2/C\#/Geo_Profs_BV/Authentication/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/Privacy.cshtml]
+[E:/School/leerjaar_2/C\#/Geo_Profs_BV/Authentication/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/Settings.cshtml]
+[E:/School/leerjaar_2/C\#/Geo_Profs_BV/Authentication/Pages/Settings.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2V0dGluZ3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/Shared/_LoginStatusPartial.cshtml]
+[E:/School/leerjaar_2/C\#/Geo_Profs_BV/Authentication/Pages/Shared/_LoginStatusPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblN0YXR1c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[E:/School/leerjaar_2/C\#/Geo_Profs_BV/Authentication/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/_ViewImports.cshtml]
+[E:/School/leerjaar_2/C\#/Geo_Profs_BV/Authentication/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/_ViewStart.cshtml]
+[E:/School/leerjaar_2/C\#/Geo_Profs_BV/Authentication/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/School/leerjaar_2/C\#/Project/Authentication/Authentication/Pages/Shared/_Layout.cshtml]
+[E:/School/leerjaar_2/C\#/Geo_Profs_BV/Authentication/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-sm99yw0q2q
