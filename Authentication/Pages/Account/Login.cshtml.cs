@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;
+using Authentication.Models;
+using Authentication.Authorization;
 
 namespace Authentication.Pages.Account
 {
@@ -10,6 +12,16 @@ namespace Authentication.Pages.Account
     {
         [BindProperty]
         public CredentialModel Credential { get; set; }
+        private ClaimsAuthentication _claimsAuthentication;
+
+        private static Random random = new Random();
+        public static string RandomString(int length)
+        {
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            return new string(Enumerable.Repeat(chars, length)
+                .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
+
 
         public void OnGet() 
         { 
@@ -23,45 +35,23 @@ namespace Authentication.Pages.Account
             if (!ModelState.IsValid) return Page();
 
             // verify the credential
-            if (Credential.Username == "admin" && Credential.Password == "password")
+            ClaimsAuthentication claims = new ClaimsAuthentication(Credential.Username, Credential.Password);
+
+            var identity = new ClaimsIdentity(claims.claims, "GHE56S85HF647SNE7GLX72NH69DT35LD537Z");
+
+            if (claims._error) return Page();
+
+            ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(identity);
+
+            // do we need persistent cookies?
+            var authProperties = new AuthenticationProperties
             {
-                // Create the security context || READ MORE ABOUT THIS!
-                var claims = new List<Claim> {
-                    new Claim(ClaimTypes.Name, "admin"),
-                    new Claim(ClaimTypes.Email, "admin@mywebsite.com"),
-                    new Claim("Department", "HR"),
-                    new Claim("Admin", "true"),
-                    new Claim("Manager", "true"),
-                    new Claim("EmploymentDate", "2021-05-01"),
-                };
+                IsPersistent = Credential.RememberMe
+            };
 
-                var identity = new ClaimsIdentity(claims, "MyCookieAuth");
+            await HttpContext.SignInAsync("GHE56S85HF647SNE7GLX72NH69DT35LD537Z", claimsPrincipal, authProperties);
 
-                ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(identity);
-
-                var authProperties = new AuthenticationProperties
-                {
-                    IsPersistent = Credential.RememberMe
-                };
-
-                await HttpContext.SignInAsync("MyCookieAuth", claimsPrincipal, authProperties);
-
-                return RedirectToPage("/index");
-            }
-
-            return Page();
+            return RedirectToPage("/index");
         }
-    }
-
-    public class CredentialModel
-    {
-        [Required]
-        [Display(Name = " User name")]
-        public string Username { get; set; }
-        [Required] public string Password { get; set; }
-
-        [Display(Name = "Remember me")]
-        public bool RememberMe;
-
     }
 }
